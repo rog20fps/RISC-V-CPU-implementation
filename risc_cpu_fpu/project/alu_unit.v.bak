@@ -1,0 +1,30 @@
+module alu_unit( 
+            
+				input [3:0] alu_ctrl,
+            input [31:0] a,b,
+				output reg zero,
+			   output reg [31:0] alu_result
+);
+				
+				
+always @(a,b,alu_ctrl)
+begin
+case(alu_ctrl)
+     
+	  4'b0000:alu_result <= a + b;                                // add,addi
+     4'b0001:alu_result <= a + ~b + 1;                           // sub,subi
+     4'b0010:alu_result <= a << b[4:0];                               // sll,slli
+     4'b0011:alu_result <= {31'b0,(a[31]==b[31])?(a<b):a[31]};   //slt,slti
+     4'b0100:alu_result <= {31'b0,a<b};                          // sltu,sltui
+     4'b0101:alu_result <= a ^ b;                                // xor
+     4'b0110:alu_result <= a >> b[4:0];                               // srl,srli
+     4'b0111:alu_result <= a >>> b[4:0];                              // sra,srai
+     4'b1000:alu_result <= a | b;                                // or,ori
+     4'b1001:alu_result <= a & b;                                // and,andi
+     default:alu_result <= 32'bx;
+endcase
+
+zero= (alu_result==32'b0)?1:0;                                   // zero flag for b type 
+
+end
+endmodule 

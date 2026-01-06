@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun May 25 23:03:15 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : mini_project
+Top-level Entity Name : RISC_cpu
+Family : Cyclone IV E
+Device : EP4CE55F23C7
+Timing Models : Final
+Total logic elements : 21,034 / 55,856 ( 38 % )
+    Total combinational functions : 13,086 / 55,856 ( 23 % )
+    Dedicated logic registers : 16,384 / 55,856 ( 29 % )
+Total registers : 16384
+Total pins : 228 / 325 ( 70 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,396,160 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 308 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

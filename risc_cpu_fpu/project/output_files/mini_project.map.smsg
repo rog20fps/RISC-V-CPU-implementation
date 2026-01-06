@@ -1,0 +1,16 @@
+Warning (10273): Verilog HDL warning at main_decoder.v(55): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v Line: 55
+Warning (10273): Verilog HDL warning at data_memory.v(35): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v Line: 35
+Warning (10268): Verilog HDL information at data_memory.v(16): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v Line: 16
+Warning (10273): Verilog HDL warning at data_memory.v(63): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v Line: 63
+Warning (10268): Verilog HDL information at data_memory.v(39): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v Line: 39
+Warning (10273): Verilog HDL warning at alu_unit.v(25): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v Line: 25
+Warning (10273): Verilog HDL warning at sign_extend.v(27): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v Line: 27
+Warning (10273): Verilog HDL warning at data_path.v(52): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 52
+Warning (10273): Verilog HDL warning at data_path.v(115): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 115
+Warning (10273): Verilog HDL warning at data_path.v(119): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 119
+Warning (10273): Verilog HDL warning at data_path.v(149): extended using "x" or "z" File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 149
+Warning (10268): Verilog HDL information at fp_register_file.v(23): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v Line: 23
+Warning (10268): Verilog HDL information at pl_reg_fd.v(36): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v Line: 36
+Warning (10268): Verilog HDL information at pl_reg_em.v(37): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v Line: 37
+Warning (10268): Verilog HDL information at pl_reg_mw.v(32): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v Line: 32
+Warning (10268): Verilog HDL information at data_hazards.v(19): always construct contains both blocking and non-blocking assignments File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v Line: 19

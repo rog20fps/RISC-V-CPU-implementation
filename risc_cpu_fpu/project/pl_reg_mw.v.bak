@@ -1,0 +1,36 @@
+module pl_reg_mw ( 
+              input clk,reset,
+				  input [31:0] reg_writeM, result_scrM, alu_resultM, rdM, PC_PLUS4M,
+				  output reg [31:0] reg_writeW, result_scrW, alu_resultW, rdW, PC_PLUS4W);
+				  
+initial begin
+     reg_writeW =0;
+	  result_scrW =0;
+	  alu_resultW =0;
+	  rdW =0;
+	  PC_PLUS4W =0;
+	  end
+	  
+always@(posedge clk) begin
+      if(reset)
+		  begin
+		   reg_writeW <=0;
+	      result_scrW <=0;
+	      alu_resultW <=0;
+	      rdW <=0;
+	      PC_PLUS4W <=0;
+		  end
+		else
+		  begin
+		   reg_writeW <=reg_writeM;
+	      result_scrW <=result_scrM;
+	      alu_resultW <=lu_resultM;
+	      rdW <=rdM;
+	      PC_PLUS4W <=PC_PLUS4M;
+		  end
+end
+endmdule
+		  
+		
+				  
+				  

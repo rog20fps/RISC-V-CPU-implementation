@@ -1,0 +1,33 @@
+module fp_data_path(
+
+       input clk,Reg_write,float_ctrl,
+		 input [31:0] instr,
+		 output [31:0] result_fp
+       
+);
+
+
+wire [31:0] rdf1,rdf2;
+wire        z_s,z_s1,z_s2,z_s3,z_s4;
+wire [7:0]  z_e,z_e1,z_e2,z_e3,z_e4;
+wire [26:0] z_m,z_m1,z_m2,z_m3,z_m4;
+  
+fp_register_file #(32) a1(clk,Reg_write,float_ctrl,instr[19:15],instr[24:20],instr[11:7],result_fp,rdf1,rdf2);
+
+fp_add  a2(float_ctrl,instr[31:25] , rdf1, rdf2, z_s1, z_e1, z_m1);
+
+fp_sub  a3(float_ctrl,instr[31:25] , rdf1, rdf2, z_s2, z_e2, z_m2);
+
+fp_mul  a4(float_ctrl,instr[31:25] , rdf1, rdf2, z_s3, z_e3, z_m3);
+
+fp_div  a5(float_ctrl,instr[31:25] , rdf1, rdf2, z_s4, z_e4, z_m4);
+
+mux4 #(1)  a6(z_s1,z_s2,z_s3,z_s4,instr[27],instr[28],z_s);
+
+mux4 #(8)  a7(z_e1,z_e2,z_e3,z_e4,instr[27],instr[28],z_e);
+
+mux4 #(27) a8(z_m1,z_m2,z_m3,z_m4,instr[27],instr[28],z_m);
+
+round_off a9(instr[14:12],z_s,z_e,z_m,result_fp);
+
+endmodule

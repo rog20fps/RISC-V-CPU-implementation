@@ -1,0 +1,29 @@
+module main_decoder(
+ 
+       input [6:0]  opcode,
+		 //input [2:0]  fun3,
+		 //input [6:0]  fun7,
+		 //input        zero,
+		 
+		 output       Branch,Jal,Jalr,Reg_write,Mem_write,Src2_ctrl,
+		 output [1:0] result_src,imm_src,alu_op
+);
+
+
+reg [11:0] ctrl_signal;
+assign ctrl_signal={Branch,Jal,Jalr,Reg_write,Mem_write,Src2_ctrl,result_src,imm_src,alu_op};
+// ctrl_signal is the combination of all the 12 bit output from the control unit
+
+always @(*)
+begin
+     
+   //7'bopcode:Branch,Jal,Jalr,Reg_write,Mem_write,Src2_ctrl,result_src,imm_src,alu_op
+     casez(op):
+	       
+			 7'b0000011:ctrl_signal=12'b0_0_0_1_0_1_01_00_00   //opcode =3 , i-type load 
+			 7'b0010011:ctrl_signal=12'b0_0_0_1_0_1_00_00_10   //opcode =19, i-type addi 
+			 7'b0?10111:ctrl_signal=12'b0_0_0_1_0_x_11_xx_xx   //opcode =23,55 u-type lui,auipc 
+			 7'b0100011:ctrl_signal=12'b0_0_0_0_1_1_00_01_00   //opcode =35, s-type store 
+			 7'b0110011:ctrl_signal=12'b0_0_0_1_0_0_00_xx_10   //opcode =51, r-type add,and
+			 7'b1100011:ctrl_signal=12'b1_0_0_0_0_0_00_10_01   //opcode =99, b-type bne,bqe
+			 

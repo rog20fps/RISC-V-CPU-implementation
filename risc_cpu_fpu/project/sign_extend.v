@@ -1,0 +1,31 @@
+module sign_extend (
+    input      [31:0] instr,         
+    input      [2:0]  imm_src,        
+    output reg [31:0] immext    
+);
+
+always @(*) 
+begin
+    case(imm_src)
+
+        3'b000:begin                                                                            //i type
+              if ((instr[4] == 1) && (instr[14:12] == 3'b101 || instr[14:12] == 3'b001))
+                  immext = {27'b0, instr[24:20]};  
+              else
+                  immext = {{20{instr[31]}}, instr[31:20]}; 
+              end
+  
+        3'b001: immext = {{20{instr[31]}}, instr[31:25], instr[11:7]};                           //s type
+
+        3'b010: immext = {{19{instr[31]}}, instr[31], instr[7], instr[30:25], instr[11:8], 1'b0}; //b type
+
+        3'b011: immext = {{12{instr[31]}}, instr[19:12], instr[20], instr[30:21], 1'b0};      //j type
+
+        3'b100: immext = {instr[31:12], 12'b0};                                               //u type
+
+        
+        default: immext = 32'bx;
+    endcase
+end
+
+endmodule

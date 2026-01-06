@@ -1,0 +1,4 @@
+LOAD A, 0x1F
+ADD A, 0x02
+STORE A, 0x10
+HALT

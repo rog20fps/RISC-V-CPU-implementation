@@ -1,0 +1,25 @@
+module register_file( 
+       input         clk,Reg_write,
+       input  [4:0]  rs1,rs2,wr_adder,
+		 input  [31:0] wr_data,
+		 output [31:0] rd1,rd2 );
+					  
+					  
+reg [31:0] reg_file[0:31];
+integer i;
+
+initial
+begin
+    for(i=0;i<32;i=i+1) reg_file[i]=0;
+end
+
+always @(posedge clk) 
+begin 
+    if(Reg_write)
+        reg_file[wr_adder] <= wr_data;
+end
+
+assign rd1=(rs1 !=0)?rs1:0;
+assign rd2=(rs2 !=0)?rs2:0;
+
+endmodule 

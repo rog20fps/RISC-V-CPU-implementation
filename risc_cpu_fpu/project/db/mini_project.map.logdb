@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,CPU:cpu1|data_path:d1|fp_main:fp1|fp_data_path:a10|fp_mul:a4|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,CPU:cpu1|data_path:d1|fp_main:fp1|fp_data_path:a10|fp_mul:a4|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,CPU:cpu1|data_path:d1|fp_main:fp1|fp_data_path:a10|fp_mul:a4|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,CPU:cpu1|data_path:d1|fp_main:fp1|fp_data_path:a10|fp_mul:a4|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out6,

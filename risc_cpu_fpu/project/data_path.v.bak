@@ -1,0 +1,8 @@
+module data_path()
+
+// a, b , s, y 
+// a , b, c, d , s0, s1, y 
+
+mux4  #(32)  PC(PC_plus4,PC_target,alu_result,2'bxx,Jalr,PC_src,PC); //4x1 mux infront of clk,pc 
+
+adder #(32)  adder_4(PC,32'b4,PC_plus4)                              //moving to next instruction 

@@ -1,0 +1,234 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 328336 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:389), pid=34752, tid=0x0000000000002d58
+#
+# JRE version: OpenJDK Runtime Environment (8.0_265-b01) (build 1.8.0_265-b01)
+# Java VM: OpenJDK 64-Bit Server VM (25.265-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001c9d148b000):  JavaThread "C2 CompilerThread3" daemon [_thread_in_native, id=11608, stack(0x000000ab1a200000,0x000000ab1a300000)]
+
+Stack: [0x000000ab1a200000,0x000000ab1a300000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2:    917 1071       4       java.lang.String::split (326 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000001c9d1564800 JavaThread "Service Thread" daemon [_thread_blocked, id=31436, stack(0x000000ab1ab00000,0x000000ab1ac00000)]
+  0x000001c9d14ce000 JavaThread "C1 CompilerThread11" daemon [_thread_blocked, id=33372, stack(0x000000ab1aa00000,0x000000ab1ab00000)]
+  0x000001c9d14cd000 JavaThread "C1 CompilerThread10" daemon [_thread_blocked, id=35148, stack(0x000000ab1a900000,0x000000ab1aa00000)]
+  0x000001c9d14d4000 JavaThread "C1 CompilerThread9" daemon [_thread_blocked, id=34900, stack(0x000000ab1a800000,0x000000ab1a900000)]
+  0x000001c9d14ce800 JavaThread "C1 CompilerThread8" daemon [_thread_blocked, id=5072, stack(0x000000ab1a700000,0x000000ab1a800000)]
+  0x000001c9d14d3800 JavaThread "C2 CompilerThread7" daemon [_thread_in_native, id=32968, stack(0x000000ab1a600000,0x000000ab1a700000)]
+  0x000001c9d14d2800 JavaThread "C2 CompilerThread6" daemon [_thread_in_native, id=33292, stack(0x000000ab1a500000,0x000000ab1a600000)]
+  0x000001c9d14d2000 JavaThread "C2 CompilerThread5" daemon [_thread_in_native, id=28648, stack(0x000000ab1a400000,0x000000ab1a500000)]
+  0x000001c9d14ac800 JavaThread "C2 CompilerThread4" daemon [_thread_in_native, id=20880, stack(0x000000ab1a300000,0x000000ab1a400000)]
+=>0x000001c9d148b000 JavaThread "C2 CompilerThread3" daemon [_thread_in_native, id=11608, stack(0x000000ab1a200000,0x000000ab1a300000)]
+  0x000001c9d1486800 JavaThread "C2 CompilerThread2" daemon [_thread_in_native, id=9916, stack(0x000000ab1a100000,0x000000ab1a200000)]
+  0x000001c9d1481000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=36992, stack(0x000000ab1a000000,0x000000ab1a100000)]
+  0x000001c9d1467800 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=20652, stack(0x000000ab19f00000,0x000000ab1a000000)]
+  0x000001c9d1465000 JavaThread "Attach Listener" daemon [_thread_blocked, id=25388, stack(0x000000ab19e00000,0x000000ab19f00000)]
+  0x000001c9d1477000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=31144, stack(0x000000ab19d00000,0x000000ab19e00000)]
+  0x000001c9d1448000 JavaThread "Finalizer" daemon [_thread_blocked, id=25112, stack(0x000000ab19c00000,0x000000ab19d00000)]
+  0x000001c9d1440800 JavaThread "Reference Handler" daemon [_thread_blocked, id=7736, stack(0x000000ab19b00000,0x000000ab19c00000)]
+  0x000001c9bf8ed000 JavaThread "main" [_thread_in_Java, id=37604, stack(0x000000ab19900000,0x000000ab19a00000)]
+
+Other Threads:
+  0x000001c9d1415800 VMThread [stack: 0x000000ab19a00000,0x000000ab19b00000] [id=25148]
+  0x000001c9d1566800 WatcherThread [stack: 0x000000ab1ac00000,0x000000ab1ad00000] [id=13164]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000a2400000, size: 1500 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ def new generation   total 76160K, used 13656K [0x00000000a2400000, 0x00000000a76a0000, 0x00000000c1800000)
+  eden space 67712K,   7% used [0x00000000a2400000, 0x00000000a29163c8, 0x00000000a6620000)
+  from space 8448K, 100% used [0x00000000a6e60000, 0x00000000a76a0000, 0x00000000a76a0000)
+  to   space 8448K,   0% used [0x00000000a6620000, 0x00000000a6620000, 0x00000000a6e60000)
+ tenured generation   total 169344K, used 6161K [0x00000000c1800000, 0x00000000cbd60000, 0x0000000100000000)
+   the space 169344K,   3% used [0x00000000c1800000, 0x00000000c1e04448, 0x00000000c1e04600, 0x00000000cbd60000)
+ Metaspace       used 8778K, capacity 8812K, committed 8960K, reserved 1056768K
+  class space    used 893K, capacity 912K, committed 1024K, reserved 1048576K
+
+Card table byte_map: [0x000001c9d0630000,0x000001c9d0920000] byte_map_base: 0x000001c9d011e000
+
+Polling page: 0x000001c9bfa10000
+
+CodeCache: size=245760Kb used=6333Kb max_used=6345Kb free=239426Kb
+ bounds [0x000001c9c1270000, 0x000001c9c18b0000, 0x000001c9d0270000]
+ total_blobs=1462 nmethods=1133 adapters=239
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.911 Thread 0x000001c9d14cd000 1131       3       com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl::scanAttribute (824 bytes)
+Event: 0.911 Thread 0x000001c9d14ce000 1132       3       com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl::getString (76 bytes)
+Event: 0.911 Thread 0x000001c9d14d4000 nmethod 1129 0x000001c9c18940d0 code [0x000001c9c1894260, 0x000001c9c1894718]
+Event: 0.912 Thread 0x000001c9d14ce800 nmethod 1130 0x000001c9c189a710 code [0x000001c9c189a940, 0x000001c9c189b8e0]
+Event: 0.912 Thread 0x000001c9d14ce000 nmethod 1132 0x000001c9c189c350 code [0x000001c9c189c560, 0x000001c9c189d0b0]
+Event: 0.912 Thread 0x000001c9d14ce000 1134       1       com.sun.org.apache.xerces.internal.util.XMLAttributesImpl::setSpecified (11 bytes)
+Event: 0.912 Thread 0x000001c9d1467800 1133       4       com.sun.org.apache.xerces.internal.util.XMLAttributesImpl::setValue (27 bytes)
+Event: 0.912 Thread 0x000001c9d14ce000 nmethod 1134 0x000001c9c1893d50 code [0x000001c9c1893ea0, 0x000001c9c1893ff8]
+Event: 0.913 Thread 0x000001c9d1467800 nmethod 1133 0x000001c9c1895f90 code [0x000001c9c18960c0, 0x000001c9c1896198]
+Event: 0.913 Thread 0x000001c9d14ac800 1135       4       com.sun.org.apache.xerces.internal.impl.XMLEntityScanner::skipString (122 bytes)
+
+GC Heap History (2 events):
+Event: 0.855 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 76160K, used 67712K [0x00000000a2400000, 0x00000000a76a0000, 0x00000000c1800000)
+  eden space 67712K, 100% used [0x00000000a2400000, 0x00000000a6620000, 0x00000000a6620000)
+  from space 8448K,   0% used [0x00000000a6620000, 0x00000000a6620000, 0x00000000a6e60000)
+  to   space 8448K,   0% used [0x00000000a6e60000, 0x00000000a6e60000, 0x00000000a76a0000)
+ tenured generation   total 169344K, used 0K [0x00000000c1800000, 0x00000000cbd60000, 0x0000000100000000)
+   the space 169344K,   0% used [0x00000000c1800000, 0x00000000c1800000, 0x00000000c1800200, 0x00000000cbd60000)
+ Metaspace       used 8775K, capacity 8812K, committed 8960K, reserved 1056768K
+  class space    used 893K, capacity 912K, committed 1024K, reserved 1048576K
+Event: 0.901 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 76160K, used 8448K [0x00000000a2400000, 0x00000000a76a0000, 0x00000000c1800000)
+  eden space 67712K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a6620000)
+  from space 8448K, 100% used [0x00000000a6e60000, 0x00000000a76a0000, 0x00000000a76a0000)
+  to   space 8448K,   0% used [0x00000000a6620000, 0x00000000a6620000, 0x00000000a6e60000)
+ tenured generation   total 169344K, used 6161K [0x00000000c1800000, 0x00000000cbd60000, 0x0000000100000000)
+   the space 169344K,   3% used [0x00000000c1800000, 0x00000000c1e04448, 0x00000000c1e04600, 0x00000000cbd60000)
+ Metaspace       used 8775K, capacity 8812K, committed 8960K, reserved 1056768K
+  class space    used 893K, capacity 912K, committed 1024K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 0.695 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17b2ac8 method=com.sun.org.apache.xerces.internal.util.SymbolTable.addSymbol([CII)Ljava/lang/String; @ 38
+Event: 0.698 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17a437c method=com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanContent(Lcom/sun/org/apache/xerces/internal/xni/XMLString;)I @ 526
+Event: 0.719 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17a0f1c method=com.sun.org.apache.xerces.internal.util.AugmentationsImpl$SmallContainer.clear()V @ 9
+Event: 0.852 Thread 0x000001c9bf8ed000 Uncommon trap: reason=predicate action=maybe_recompile pc=0x000001c9c1890d80 method=com.altera.sopcmodel.util.Version.compare([I[I)I @ 19
+Event: 0.909 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c1874fb4 method=com.altera.utilities.AltFile.goodSlash(Ljava/lang/String;)Ljava/lang/String; @ 119
+Event: 0.909 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c1758ae8 method=java.util.regex.Pattern$Slice.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 18
+Event: 0.909 Thread 0x000001c9bf8ed000 Uncommon trap: reason=predicate action=maybe_recompile pc=0x000001c9c1844f38 method=java.util.ArrayList.indexOf(Ljava/lang/Object;)I @ 44
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17ae5fc method=com.sun.org.apache.xerces.internal.util.XMLAttributesImpl.addAttributeNS(Lcom/sun/org/apache/xerces/internal/xni/QName;Ljava/lang/String;Ljava/lang/String;)V @ 22
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17a323c method=com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.getString()Lcom/sun/org/apache/xerces/internal/xni/XMLString; @ 22
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001c9c17a7230 method=com.sun.org.apache.xerces.internal.util.XMLAttributesImpl.addAttributeNS(Lcom/sun/org/apache/xerces/internal/xni/QName;Ljava/lang/String;Ljava/lang/String;)V @ 22
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.904 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a2533578) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.904 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a2535f58) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.904 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a255ee50) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.904 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a25833e0) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.904 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a2585e78) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.905 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a2588860) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.905 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a258b298) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.905 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a258dd38) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.908 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a2728848) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 0.908 Thread 0x000001c9bf8ed000 Exception <a 'java/lang/ClassNotFoundException': > (0x00000000a276a8a8) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+
+Events (10 events):
+Event: 0.909 Thread 0x000001c9bf8ed000 DEOPT UNPACKING pc=0x000001c9c12b5583 sp=0x000000ab199fea08 mode 2
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: trap_request=0xffffff65 fr.pc=0x000001c9c17ae5fc
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT PACKING pc=0x000001c9c17ae5fc sp=0x000000ab199fe130
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT UNPACKING pc=0x000001c9c12b5583 sp=0x000000ab199fe020 mode 2
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: trap_request=0xffffff65 fr.pc=0x000001c9c17a323c
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT PACKING pc=0x000001c9c17a323c sp=0x000000ab199fe090
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT UNPACKING pc=0x000001c9c12b5583 sp=0x000000ab199fe038 mode 2
+Event: 0.911 Thread 0x000001c9bf8ed000 Uncommon trap: trap_request=0xffffff65 fr.pc=0x000001c9c17a7230
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT PACKING pc=0x000001c9c17a7230 sp=0x000000ab199fe060
+Event: 0.911 Thread 0x000001c9bf8ed000 DEOPT UNPACKING pc=0x000001c9c12b5583 sp=0x000000ab199fe008 mode 2
+
+
+Dynamic libraries:
+0x00007ff6ee530000 - 0x00007ff6ee56a000 	D:\intel_quartus\quartus\bin64\jre64\bin\java.exe
+0x00007ffd54150000 - 0x00007ffd54367000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd525d0000 - 0x00007ffd52694000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd51740000 - 0x00007ffd51afa000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd52c70000 - 0x00007ffd52d22000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd54060000 - 0x00007ffd54107000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd537a0000 - 0x00007ffd53847000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd514a0000 - 0x00007ffd514c8000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffd53f40000 - 0x00007ffd54054000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd53d90000 - 0x00007ffd53f3e000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd51710000 - 0x00007ffd51736000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd52c40000 - 0x00007ffd52c69000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd515f0000 - 0x00007ffd5170b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd51db0000 - 0x00007ffd51e4a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd514d0000 - 0x00007ffd515e1000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd47de0000 - 0x00007ffd48072000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4541_none_2710d1c57384c085\COMCTL32.dll
+0x00007ffd51e60000 - 0x00007ffd51e91000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffce9430000 - 0x00007ffce951f000 	D:\intel_quartus\quartus\bin64\jre64\bin\msvcr120.dll
+0x00007ffcf1a70000 - 0x00007ffcf1b16000 	D:\intel_quartus\quartus\bin64\jre64\bin\msvcp120.dll
+0x000000005ab40000 - 0x000000005b3a6000 	D:\intel_quartus\quartus\bin64\jre64\bin\server\jvm.dll
+0x00007ffd52d30000 - 0x00007ffd52d38000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd4b3e0000 - 0x00007ffd4b3ea000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd4eaf0000 - 0x00007ffd4eb24000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd36370000 - 0x00007ffd36379000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd52040000 - 0x00007ffd520b1000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd4ecd0000 - 0x00007ffd4ecdf000 	D:\intel_quartus\quartus\bin64\jre64\bin\verify.dll
+0x00007ffd49ee0000 - 0x00007ffd49f08000 	D:\intel_quartus\quartus\bin64\jre64\bin\java.dll
+0x00007ffd23c90000 - 0x00007ffd23ca6000 	D:\intel_quartus\quartus\bin64\jre64\bin\zip.dll
+0x00007ffd52f20000 - 0x00007ffd53798000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffd4f310000 - 0x00007ffd4fc18000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffd520d0000 - 0x00007ffd5245f000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd4f1d0000 - 0x00007ffd4f30f000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+0x00007ffd53920000 - 0x00007ffd53a1a000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffd51fe0000 - 0x00007ffd5203e000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffd51350000 - 0x00007ffd5137b000 	C:\WINDOWS\SYSTEM32\profapi.dll
+
+VM Arguments:
+jvm_args: -Xmx1500M -XX:+UseSerialGC 
+java_command: com.altera.sopcmodel.sbtools.sbcatalog.SbCatalog --xml --project-directory= --search-path=$,D:\intel_quartus\project,D:\intel_quartus\project
+java_class_path (initial): D:/intel_quartus/quartus/sopc_builder/model/lib\Nlview.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\TableLayout.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\appframework-1.03.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\asm-3.1.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\asm-commons-3.1.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\basicmodel.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\beansbinding-1.2.1.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\binding-2.0.6.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.componenteditor2.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.app_lib.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.editor.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.elements.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.core.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.hal.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.lwhal.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.schema.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.scripting.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.commandline.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.cpexample.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.flash.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.launch.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.swinfo.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.utilities.jar;D:/intel_quartus/quartus/sopc_builder/model/lib\com.altera.entityinterfaces.jar;D:/intel_quartus/qu
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=D:/intel_quartus/quartus/bin64;d:\intel_quartus\quartus\bin64\;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\ucrt64\bin;C:\Users\Aithal\AppData\Local\Microsoft\WindowsApps;C:\Users\Aithal\AppData\Local\Programs\Microsoft VS Code\bin;D:\intel_quartus\modelsim_ase\win32aloem
+USERNAME=Aithal
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 22621 (10.0.22621.4391)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 1 threads per core) family 25 model 80 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 16153740k(2258620k free), swap 48379316k(5128k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.265-b01) for windows-amd64 JRE (1.8.0_265-b01), built on Jul 28 2020 15:11:27 by "jenkins" with MS VC++ 12.0 (VS2013)
+
+time: Sun Jan 12 15:19:46 2025
+timezone: India Standard Time
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

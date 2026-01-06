@@ -1,0 +1,4 @@
+module RISC_cpu
+
+CPU #(32) (clk,reset,instr,read_data,
+	         Mem_write,PC,wrdata_add,wr_data,Result);

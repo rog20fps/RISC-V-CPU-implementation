@@ -1,0 +1,5 @@
+module data_hazards
+(
+
+output forward_A,forward_B,
+);

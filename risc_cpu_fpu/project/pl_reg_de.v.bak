@@ -1,0 +1,42 @@
+module pl_reg_de(
+    input  				 clk,reset
+    input      [31:0] rd1D, rd2D, PCD , PCPLUS4D,Imm_ExtD,rs1D,rs2D,rdD,
+	 
+		 input        BranchD,JalD,JalrD,Reg_writeD,Mem_writeD,Src2_ctrlD,float_ctrlD,
+		 input [2:0]  imm_srcD,
+		 input [2:0]  result_srcD,
+		 input        PC_srcD,
+		 input[3:0]  alu_ctrlD,
+		 
+		 
+		 output     [31:0] rd1E, rd2E, PCE , PCPLUS4E,Imm_ExtE,rs1E,rs2E,rdE,
+	 
+		 output        BranchE,JalE,JalrE,Reg_writeE,Mem_writeE,Src2_ctrlE,float_ctrlE,
+		 output [2:0]  imm_srcE,
+		 output [2:0]  result_srcE,
+		 output        PC_srcE,
+		 output[3:0]  alu_ctrlE
+		 
+       
+);
+
+initial begin
+    InstrD = 32'd0; 
+	 PCD = 32'd0; 
+	 PCPlus4D = 32'd0;
+end
+
+always @(posedge clk) begin
+    if (reset) 
+	 begin
+        InstrD <= 0; PCD <= 0; PCPlus4D <= 0;
+    end 
+	 else 
+	 begin
+        InstrD <= InstrF; 
+		  PCD <= PCF;
+        PCPlus4D <= PCPlus4F;
+    end
+end
+
+endmodule

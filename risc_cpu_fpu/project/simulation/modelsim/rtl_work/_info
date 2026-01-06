@@ -1,0 +1,757 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intel_quartus/sem_6/risc_cpu_fpu/project/simulation/modelsim
+vadder
+Z1 !s110 1748815308
+!i10b 1
+!s100 E6`SA>_gIlOik8Rb@>5Xe2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IC1We]_;@ECK>BSS6QfohF1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1748163016
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v
+!i122 8
+L0 1 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1748815308.000000
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project
+Z9 tCvgOpt 0
+valu_decoder
+Z10 !s110 1748815307
+!i10b 1
+!s100 cR=:A6?HQ]<Q4ez2m>0b83
+R2
+I6nbKOJgaG;=b_0]A5zoUl0
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v
+!i122 1
+L0 1 35
+R5
+r1
+!s85 0
+31
+Z11 !s108 1748815307.000000
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v|
+!i113 1
+R7
+R8
+R9
+valu_unit
+R1
+!i10b 1
+!s100 k`Y5@57[B3h1ZDQI0L8Oc0
+R2
+IC1FgSjWdjMo9h4HfiNb5f1
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v
+!i122 3
+Z12 L0 1 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v|
+!i113 1
+R7
+R8
+R9
+vbranch_prediction
+Z13 !s110 1748815310
+!i10b 1
+!s100 hZAJb7S=e1H^75:394I:?2
+R2
+Id<7n;7TIKDgV3WnV^Tn2J2
+R3
+R0
+w1748808992
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v
+!i122 28
+L0 1 47
+R5
+r1
+!s85 0
+31
+Z14 !s108 1748815310.000000
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v|
+!i113 1
+R7
+R8
+R9
+vcontrol_unit
+R1
+!i10b 1
+!s100 z[I>GFd[R0:z3zbn]hE_W3
+R2
+IJ7nVob_NmcQM<d8MZ0P`d2
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v
+!i122 11
+Z15 L0 1 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v|
+!i113 1
+R7
+R8
+R9
+vCPU
+Z16 !s110 1748815309
+!i10b 1
+!s100 nG;fk^z3f4c2l22i5eSE83
+R2
+IDW8VW;:6P1fI9ioK<@M@Q1
+R3
+R0
+w1748811588
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v
+!i122 12
+L0 1 27
+R5
+r1
+!s85 0
+31
+Z17 !s108 1748815309.000000
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v|
+!i113 1
+R7
+R8
+R9
+n@c@p@u
+vdata_hazards
+R13
+!i10b 1
+!s100 45IMY717VTdcOc>MzkYg53
+R2
+I`>`=TCY=Ve[]02OQl[Ke`1
+R3
+R0
+w1748803579
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v
+!i122 27
+L0 1 54
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v|
+!i113 1
+R7
+R8
+R9
+vdata_memory
+R1
+!i10b 1
+!s100 4`??_7VeT8dfmZzez50oJ1
+R2
+IG^k7Nec1@DJ4z8N?8WTSi2
+R3
+R0
+w1748811650
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v
+!i122 2
+L0 1 67
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v|
+!i113 1
+R7
+R8
+R9
+vdata_path
+R1
+!i10b 1
+!s100 =O=<J@UnNSkdK]3T3AG7^1
+R2
+I]fAoQ;=Q7UK9HiV6e3oeb2
+R3
+R0
+w1748811505
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v
+!i122 9
+L0 1 154
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v|
+!i113 1
+R7
+R8
+R9
+vfp_add
+R16
+!i10b 1
+!s100 mKW^cLlZR?GEE6fk:3_j20
+R2
+Ij@eBfe;nH7Af:Rn[bZ4`n1
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v
+!i122 15
+L0 1 160
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v|
+!i113 1
+R7
+R8
+R9
+vfp_data_path
+R13
+!i10b 1
+!s100 SdGBBFfF4DP<3El>kjjCO3
+R2
+I01QQEBmH3TVjLW9NE;ZS42
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v
+!i122 21
+L0 1 33
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v|
+!i113 1
+R7
+R8
+R9
+vfp_div
+R16
+!i10b 1
+!s100 <R]=j7bV?HD8E<b<CI_=a0
+R2
+IBmCH]I;AFAJ]:g0IklZGi2
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v
+!i122 18
+L0 1 193
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v|
+!i113 1
+R7
+R8
+R9
+vfp_main
+R13
+!i10b 1
+!s100 ``64nAUbzG5^e6A`HBHkb0
+R2
+IacVX`Y1EdZ9:fz2O3RGGl0
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v
+!i122 22
+L0 1 10
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v|
+!i113 1
+R7
+R8
+R9
+vfp_mul
+R16
+!i10b 1
+!s100 Yi51UJ^TAoiS?zS759>kI2
+R2
+I7h:S3NIFic]e5a[EbnZ0B1
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v
+!i122 17
+L0 1 215
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v|
+!i113 1
+R7
+R8
+R9
+vfp_register_file
+R16
+!i10b 1
+!s100 ?BHi4hMVck^Q@57[=D>HN3
+R2
+IjCS5PcO<EnSVm8K>beYMl1
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v
+!i122 20
+L0 1 34
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v|
+!i113 1
+R7
+R8
+R9
+vfp_sub
+R16
+!i10b 1
+!s100 Xam2`TJMCI0L186K6ClH<1
+R2
+IhfjW1MbIf?>gR6[FDK>7n1
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v
+!i122 16
+L0 1 147
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v|
+!i113 1
+R7
+R8
+R9
+vinstruction_memory
+R13
+!i10b 1
+!s100 [Om;lWdM_X5<YFfIjUa7Z0
+R2
+IaHf9>;QNM<n9W1AbG9nFH0
+R3
+R0
+w1748770621
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v
+!i122 29
+L0 1 19
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v|
+!i113 1
+R7
+R8
+R9
+vmain_decoder
+R10
+!i10b 1
+!s100 8kh[MjUjHHGV^ZJ22@cV42
+R2
+IP94zb4jIC6_AaaSQ6nH9c1
+R3
+R0
+w1748806773
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v
+!i122 0
+L0 1 63
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+!i10b 1
+!s100 0<:CCg;`JoME_O=>dAa`91
+R2
+IfnI_S061a`JHJcm6Yf<GK3
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v
+!i122 6
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v|
+!i113 1
+R7
+R8
+R9
+vmux4
+R1
+!i10b 1
+!s100 gT4Fhm2X3on903N=SKczJ0
+R2
+IC@IoG3f6n]jXJM]>mz@?g2
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v
+!i122 7
+L0 1 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v|
+!i113 1
+R7
+R8
+R9
+vmux8
+R16
+!i10b 1
+!s100 a:O]Ic]Y>85;TSbMfAa>71
+R2
+I;=S@NgJ]RQF9V[5djGo=m2
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v
+!i122 14
+R15
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_de
+R13
+!i10b 1
+!s100 7865MWLlNV07VQ[lz2SAA2
+R2
+II^M9SdjMFW3=8Bek]KeQ72
+R3
+R0
+w1748810426
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v
+!i122 24
+L0 1 99
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_em
+R13
+!i10b 1
+!s100 9H2adko4g4Mi?3m9HQD2W3
+R2
+Ie9n>M[keA3^i3m65@g9Bn3
+R3
+R0
+w1748811387
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v
+!i122 25
+L0 1 70
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_fd
+R13
+!i10b 1
+!s100 J<ZSYYN[=@Mk41;iMUok_2
+R2
+IfRzRg_6ZSo_e^UE>CKk2`0
+R3
+R0
+w1748801806
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v
+!i122 23
+L0 2 93
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_mw
+R13
+!i10b 1
+!s100 W38RiL]g_2a2k<5ll=D`D2
+R2
+ImMDgL3l[E=fg:YOE`FX8n3
+R3
+R0
+w1748809677
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v
+!i122 26
+L0 1 58
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v|
+!i113 1
+R7
+R8
+R9
+vregister_file
+R1
+!i10b 1
+!s100 @bc7DFi5W]ZDIE]KecTbS1
+R2
+I=cdG[1MS?S25>jOWhAcij1
+R3
+R0
+w1748235830
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v
+!i122 5
+L0 1 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v|
+!i113 1
+R7
+R8
+R9
+vreset_ff
+R1
+!i10b 1
+!s100 2:DA8kJ4DMIDlzmTGX?fK2
+R2
+I]J4`F51^OJBejo0Jo0DjC0
+R3
+R0
+w1748177592
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v
+!i122 10
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v|
+!i113 1
+R7
+R8
+R9
+vRISC_cpu
+R16
+!i10b 1
+!s100 Q6E[n;Q2P<bA@TR3Z_VS<3
+R2
+IhAQKWf2g;CWKozCQ^P8Kc3
+R3
+R0
+w1748815212
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v
+!i122 13
+R12
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v|
+!i113 1
+R7
+R8
+R9
+n@r@i@s@c_cpu
+vround_off
+R16
+!i10b 1
+!s100 ZcP5gVj`jhdkDG64EDO1U1
+R2
+IX`m7[4@=?HN24V0lRkgc10
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v
+!i122 19
+L0 1 78
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v|
+!i113 1
+R7
+R8
+R9
+vsign_extend
+R1
+!i10b 1
+!s100 l3caMBaF7`4SCb1g=K3B[2
+R2
+IXD`XHAj^_HaFBBT?^j;d90
+R3
+R0
+R4
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v
+!i122 4
+L0 1 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project|D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v|
+!i113 1
+R7
+R8
+R9
+vtest_bench
+R13
+!i10b 1
+!s100 P2zUU:ETS0kLTGCWKCLB=3
+R2
+I^0Pz8:dbalFh_T]37boWo2
+R3
+R0
+w1748163017
+8D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v
+FD:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v
+!i122 30
+L0 3 573
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files|D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files
+R9

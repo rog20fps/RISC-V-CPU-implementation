@@ -1,0 +1,40 @@
+module pl_reg_em (
+          input [31:0] rg_writeE, result_srcE, mem_writeE, alu_resultE, write_dataE, rdE, PC_PLUS4E,
+			 output [31:0] rg_writeM, result_srcM, mem_writeM, alu_resultM, write_dataM, rdM, PC_PLUS4M );
+			 
+			   
+initial begin
+          rg_writeM=0;
+			 result_srcM=0;
+			 mem_writeM=0; 
+			 alu_resultM=0;
+			 write_dataM=0; 
+			 rdM=0; 
+			 PC_PLUS4M=0;
+		  end 
+  
+ always@(posedge clk)
+   begin
+	     if (reset)
+		  begin
+          rg_writeM <=0;
+			 result_srcM <=0;
+			 mem_writeM <=0; 
+			 alu_resultM <=0;
+			 write_dataM <=0; 
+			 rdM <=0; 
+			 PC_PLUS4M <=0;
+        end
+		  
+		 else
+		 begin
+		    rg_writeM <=rg_writeE;
+			 result_srcM <=result_srcE;
+			 mem_writeM <=mem_writeE; 
+			 alu_resultM <=alu_resultE;
+			 write_dataM <=write_dataE; 
+			 rdM <=rdE; 
+			 PC_PLUS4M <=PC_PLUS4E;
+   	end
+   end
+endmodule

@@ -1,0 +1,455 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do mini_project_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intel_quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:47 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/main_decoder.v 
+# -- Compiling module main_decoder
+# 
+# Top level modules:
+# 	main_decoder
+# End time: 03:31:47 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:47 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 03:31:47 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:47 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_memory.v 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/alu_unit.v 
+# -- Compiling module alu_unit
+# 
+# Top level modules:
+# 	alu_unit
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/sign_extend.v 
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/register_file.v 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux2.v 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux4.v 
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v 
+# -- Compiling module data_path
+# 
+# Top level modules:
+# 	data_path
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/reset_ff.v 
+# -- Compiling module reset_ff
+# 
+# Top level modules:
+# 	reset_ff
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:48 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 03:31:48 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v 
+# -- Compiling module RISC_cpu
+# 
+# Top level modules:
+# 	RISC_cpu
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v 
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_add.v 
+# -- Compiling module fp_add
+# 
+# Top level modules:
+# 	fp_add
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_sub.v 
+# -- Compiling module fp_sub
+# 
+# Top level modules:
+# 	fp_sub
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_mul.v 
+# -- Compiling module fp_mul
+# 
+# Top level modules:
+# 	fp_mul
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_div.v 
+# -- Compiling module fp_div
+# 
+# Top level modules:
+# 	fp_div
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/round_off.v 
+# -- Compiling module round_off
+# 
+# Top level modules:
+# 	round_off
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_register_file.v 
+# -- Compiling module fp_register_file
+# 
+# Top level modules:
+# 	fp_register_file
+# End time: 03:31:49 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:49 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_data_path.v 
+# -- Compiling module fp_data_path
+# 
+# Top level modules:
+# 	fp_data_path
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/fp_main.v 
+# -- Compiling module fp_main
+# 
+# Top level modules:
+# 	fp_main
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_fd.v 
+# -- Compiling module pl_reg_fd
+# 
+# Top level modules:
+# 	pl_reg_fd
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_de.v 
+# -- Compiling module pl_reg_de
+# 
+# Top level modules:
+# 	pl_reg_de
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_em.v 
+# -- Compiling module pl_reg_em
+# 
+# Top level modules:
+# 	pl_reg_em
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v 
+# -- Compiling module pl_reg_mw
+# 
+# Top level modules:
+# 	pl_reg_mw
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_hazards.v 
+# -- Compiling module data_hazards
+# 
+# Top level modules:
+# 	data_hazards
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/branch_prediction.v 
+# -- Compiling module branch_prediction
+# 
+# Top level modules:
+# 	branch_prediction
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project {D:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project" D:/intel_quartus/sem_6/risc_cpu_fpu/project/instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files {D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:50 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files" D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v 
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 03:31:50 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  test_bench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" test_bench 
+# Start time: 03:31:51 on Jun 02,2025
+# Loading work.test_bench
+# Loading work.RISC_cpu
+# Loading work.CPU
+# Loading work.control_unit
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.data_path
+# Loading work.data_hazards
+# Loading work.mux4
+# Loading work.reset_ff
+# Loading work.adder
+# Loading work.pl_reg_fd
+# Loading work.register_file
+# Loading work.sign_extend
+# Loading work.branch_prediction
+# Loading work.pl_reg_de
+# Loading work.fp_main
+# Loading work.fp_data_path
+# Loading work.fp_register_file
+# Loading work.fp_add
+# Loading work.fp_sub
+# Loading work.fp_mul
+# Loading work.fp_div
+# Loading work.round_off
+# Loading work.mux2
+# Loading work.alu_unit
+# Loading work.pl_reg_em
+# Loading work.pl_reg_mw
+# Loading work.mux8
+# Loading work.instruction_memory
+# Loading work.data_memory
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'funct_3m'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'funct_3m'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'read_data_w'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1/mw File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 145
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'b'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1/m2 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 149
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Aithal  Hostname: LAPTOP-G2SE10E2  ProcessID: 32500
+#           Attempting to use alternate WLF file "./wlft5e16my".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5e16my
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 1. addi implementation for x0 is incorrect
+# 2. addi implementation is incorrect
+# 3. slli implementation is incorrect
+# 4. slti implementation is incorrect
+# 5. sltiu implementation is incorrect
+# 6. xori implementation is incorrect
+# 7. srli implementation is incorrect
+# 8. srai implementation is incorrect
+# 9. ori implementation is incorrect
+# 10. andi implementation is incorrect
+# 11. add implementation is incorrect
+# 12. sub implementation is incorrect
+# 13. sll implementation is incorrect
+# 14. slt implementation is incorrect
+# 15. sltu implementation is incorrect
+# 16. xor implementation is incorrect
+# 17. srl implementation is incorrect
+# 18. sra implementation is incorrect
+# 19. or implementation is incorrect
+# 20. and implementation is incorrect
+# 21. lui implementation is incorrect
+# 22. auipc implementation is incorrect
+# 26. lb implementation is incorrect
+# 27. lh implementation is incorrect
+# 28. lw implementation is incorrect
+# 29. lbu implementation is incorrect
+# 30. lhu implementation is incorrect
+# blt struck in loop
+# ** Note: $stop    : D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v(399)
+#    Time: 365 ns  Iteration: 1  Instance: /test_bench
+# Break in Module test_bench at D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v line 399
+add wave -r /*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'funct_3m'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/RISC_cpu.v Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'funct_3m'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/CPU.v Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'read_data_w'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/pl_reg_mw.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1/mw File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 145
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'b'. The port definition is at: D:/intel_quartus/sem_6/risc_cpu_fpu/project/mux8.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench/uut/cpu1/d1/m2 File: D:/intel_quartus/sem_6/risc_cpu_fpu/project/data_path.v Line: 149
+run -all
+# 1. addi implementation for x0 is incorrect
+# 2. addi implementation is incorrect
+# 3. slli implementation is incorrect
+# 4. slti implementation is incorrect
+# 5. sltiu implementation is incorrect
+# 6. xori implementation is incorrect
+# 7. srli implementation is incorrect
+# 8. srai implementation is incorrect
+# 9. ori implementation is incorrect
+# 10. andi implementation is incorrect
+# 11. add implementation is incorrect
+# 12. sub implementation is incorrect
+# 13. sll implementation is incorrect
+# 14. slt implementation is incorrect
+# 15. sltu implementation is incorrect
+# 16. xor implementation is incorrect
+# 17. srl implementation is incorrect
+# 18. sra implementation is incorrect
+# 19. or implementation is incorrect
+# 20. and implementation is incorrect
+# 21. lui implementation is incorrect
+# 22. auipc implementation is incorrect
+# 26. lb implementation is incorrect
+# 27. lh implementation is incorrect
+# 28. lw implementation is incorrect
+# 29. lbu implementation is incorrect
+# 30. lhu implementation is incorrect
+# blt struck in loop
+# ** Note: $stop    : D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v(399)
+#    Time: 365 ns  Iteration: 1  Instance: /test_bench
+# Break in Module test_bench at D:/intel_quartus/sem_6/risc_cpu_fpu/project/output_files/test_bench.v line 399
+# End time: 03:46:47 on Jun 02,2025, Elapsed time: 0:14:56
+# Errors: 0, Warnings: 4

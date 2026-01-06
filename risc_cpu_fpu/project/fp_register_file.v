@@ -1,0 +1,34 @@
+module fp_register_file #(parameter V=32)
+(
+       input          clk,Reg_write,float_ctrl,
+       input  [4:0]   rsf1,rsf2,wr_adder,
+		 input  [V-1:0] wr_data,
+		 output [V-1:0] rdf1,rdf2 );
+		 
+					  
+					  
+reg [V-1:0] reg_file[0:31]; // creates 32 register of 32 bit wide , reg_file name of array
+integer i;
+
+initial
+begin
+    
+	  //reg_file[2] = 32'b0_11001010_10000000001111100000000; //from mul tb of sp8
+	  //reg_file[1] = 32'b0_11001010_11100000000111111111010;
+	 
+    for(i=3;i<32;i=i+1) 
+	     reg_file[i]=0;                                    //initialize all the registers to zero 
+end
+
+always @(posedge clk) 
+begin 
+    if(Reg_write)
+        reg_file[wr_adder] <= wr_data;
+		  reg_file[2] = 32'b0_11001010_10000000001111100000000; //from mul tb of sp8
+	     reg_file[1] = 32'b0_11001010_11100000000111111111010;
+end
+
+assign rdf1 = (rsf1 !=0) ? reg_file[rsf1]:0; //rd1 holds data inside rs1
+assign rdf2 = (rsf2 !=0) ? reg_file[rsf2]:0; //rd2 holds data inside rs2 
+
+endmodule 
